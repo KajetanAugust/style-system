@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;700;900&display=swap');
 
 
+* {
+    box-sizing: border-box;
+}
+
 /*////////////////*/
 /* HEADER SECTION */
 /*////////////////*/
@@ -55,8 +59,9 @@ main {
 }
 
 hr {
-    color: #495D63;
-    background-color: #495D63;
+    color: rgba(73, 93, 99, 0.25);
+    background-color: rgba(73, 93, 99, 0.25);
+    border-color: rgba(73, 93, 99, 0.25);
 }
 
 h2 {
@@ -67,6 +72,10 @@ h2 {
 h3 {
     font-size: 1.25rem;
     color: #495D63;
+}
+
+p {
+    font-size: 1.25rem;
 }
 
 
@@ -92,7 +101,6 @@ h3 {
     font-weight: 900;
     margin-top:300px;
 }
-
 
 .color1 {
     background: #BAD29F;
@@ -124,7 +132,6 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 1.25rem;
 }
 
 .noto-serif {
@@ -163,4 +170,104 @@ h3 {
 
 .weight900 {
     font-weight: 900;
+}
+
+
+/*TEXT STYLES SECTION*/
+
+#text-styles {
+    margin: 100px 50px;
+}
+
+#text-styles h3:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#text-styles hr {
+    color: rgba(73, 93, 99, 0.10);
+    background-color: rgba(73, 93, 99, 0.10);
+    border-color: rgba(73, 93, 99, 0.10);
+}
+
+.text-style-samples {
+    text-align: center;
+}
+
+.text-style-samples p{
+    font-weight: 100;
+}
+
+
+/*BUTTONS SECTION*/
+
+.buttons-samples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 50px 100px 50px;
+}
+
+.buttons-samples button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.buttons-samples button:hover {
+    color:white;
+    border:solid transparent;
+}
+
+.accept-button {
+    color: #5DB7DE;
+    background-color: white;
+    border: solid 3px #5DB7DE;
+}
+
+.accept-button:hover {
+    background-color: #5DB7DE;
+}
+
+.cancel-button {
+    color: #495D63;
+    background-color: white;
+    border: solid 3px #495D63;
+}
+
+.cancel-button:hover {
+    background-color: #495D63;
+}
+
+.save-button {
+    color: #BAD29F;
+    background-color: white;
+    border: solid 3px #BAD29F;
+}
+
+.save-button:hover {
+    background-color: #BAD29F;
+}
+
+.delete-button {
+    color: #D64933;
+    background-color: white;
+    border: solid 3px #D64933;
+}
+
+.delete-button:hover {
+    background-color: #D64933;
+}
+
+
+/*////////////////*/
+/* FOOTER SECTION */
+/*////////////////*/
+
+footer {
+    margin: 25px 100px;
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: center;
+    color: #2D0320;
 }
