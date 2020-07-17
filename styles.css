@@ -4,6 +4,7 @@
 /*NOTO SERIF FONT IMPORT*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;700;900&display=swap');
 
+
 /*////////////////*/
 /* HEADER SECTION */
 /*////////////////*/
@@ -49,19 +50,75 @@ nav a:last-child {
 /*//////////////*/
 
 main {
-    margin: auto 100px;
+    margin: auto 125px;
     font-family: "Noto Sans JP", sans-serif;
+}
+
+hr {
+    color: #495D63;
+    background-color: #495D63;
 }
 
 h2 {
     font-size: 1.75rem;
+    color: #2D0320;
 }
 
 h3 {
     font-size: 1.25rem;
+    color: #495D63;
+}
+
+
+/*COLORS SECTION*/
+
+.color-samples-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 50px;
+}
+
+.color-sample {
+    width: 200px;
+    height: 350px;
+    text-align: center;
+}
+
+.color-sample p {
+    display: inline-block;
+    height: 50px;
+    color: white;
+    font-weight: 900;
+    margin-top:300px;
+}
+
+
+.color1 {
+    background: #BAD29F;
+}
+
+.color2 {
+    background: #5db7de;
+}
+
+.color3 {
+    background: #D64933;
+}
+
+.color4 {
+    background: #495d63;
+}
+
+.color5 {
+    background: #2D0320;
 }
 
 /*FONTS SECTION*/
+
+#fonts {
+    margin: 50px 50px;
+}
 
 .font-samples-container {
     display: flex;
