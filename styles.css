@@ -15,11 +15,17 @@
 
 header {
     display: flex;
+    position: fixed;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 100px;
+    margin: 0 100px 25px 100px;
     font-family: "Noto Sans JP", sans-serif;
+    width: 87%;
+    height: 113px;
+    top:0;
+    background-color: white;
+    z-index: 10;
 }
 
 .main-header {
@@ -54,6 +60,8 @@ nav a:last-child {
 /*//////////////*/
 
 main {
+    position: relative;
+    top: 150px;
     margin: auto 125px;
     font-family: "Noto Sans JP", sans-serif;
 }
@@ -79,13 +87,31 @@ p {
 }
 
 
+/*IMAGES SECTION*/
+
+.img-samples-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 50px ;
+}
+
+.img-samples-container img {
+    width: 500px;
+}
+
+.with-border-img {
+    border: 1px solid rgba(73, 93, 99, 0.25);
+    padding: 10px;
+}
+
 /*COLORS SECTION*/
 
 .color-samples-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 50px 50px;
+    margin: 100px 50px;
 }
 
 .color-sample {
@@ -125,7 +151,7 @@ p {
 /*FONTS SECTION*/
 
 #fonts {
-    margin: 50px 50px;
+    margin: 50px 50px 100px 50px;
 }
 
 .font-samples-container {
@@ -176,7 +202,7 @@ p {
 /*TEXT STYLES SECTION*/
 
 #text-styles {
-    margin: 100px 50px;
+    margin: 50px 50px 100px 50px;
 }
 
 #text-styles h3:nth-child(2) {
@@ -184,7 +210,7 @@ p {
     margin-bottom: 50px;
 }
 
-#text-styles hr {
+#typography-div hr {
     color: rgba(73, 93, 99, 0.10);
     background-color: rgba(73, 93, 99, 0.10);
     border-color: rgba(73, 93, 99, 0.10);
@@ -266,8 +292,15 @@ p {
 /*////////////////*/
 
 footer {
+    position: relative;
+    top: 150px;
     margin: 25px 100px;
     font-family: "Noto Sans JP", sans-serif;
     text-align: center;
+    font-weight: 100;
+    color: #2D0320;
+}
+
+footer a {
     color: #2D0320;
 }
